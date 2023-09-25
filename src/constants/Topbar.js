@@ -12,13 +12,13 @@ export const socialMedia = [
     link: "https://www.facebook.com/",
   },
   {
-    name: "LinkedIn",
-    src: LinkedIn,
-    link: "https://www.linkedin.com/",
-  },
-  {
     name: "Twitter",
     src: Twitter,
     link: "https://www.twitter.com/",
+  },
+  {
+    name: "LinkedIn",
+    src: LinkedIn,
+    link: "https://www.linkedin.com/",
   },
 ];

@@ -11,7 +11,7 @@ import {
   Team,
   NotFound,
 } from "./pages/pages";
-import { Navbar, Topbar } from "./components/components";
+import { Footer, Navbar, Topbar } from "./components/components";
 
 const App = () => {
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <div className="w-full flex justify-center bg-pri-dark-gray">
         <Topbar />
       </div>
-      <div className="md:w-[1210px]">
+      <div className="w-full flex justify-center bg-[#1b1b1bed]">
         <Navbar />
       </div>
 
@@ -41,6 +41,10 @@ const App = () => {
         {/* Protection */}
         {/* 404 Not Found */}
       </Routes>
+
+      <div className="">
+        <Footer />
+      </div>
     </Router>
   );
 };

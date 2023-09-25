@@ -49,7 +49,7 @@ export default {
         },
         "h3": { 
           fontSize: theme('fontSize.head-3'), 
-          fontWeight: '700',
+          fontWeight: '400',
           fontFamily: theme('fontFamily.cabin'),
         },
         "h4": { 
@@ -81,8 +81,12 @@ export default {
           width: '16px',
           height: '16px',
         },
+        '.icon-lg': {
+          width: '44px',
+          height: '44px',
+        },
         '.btn-base': {
-          padding: '8px 16px',
+          padding: '6px 8px',
           borderWidth: '1.5px',
           fontFamily: theme('fontFamily.lato'),
           fontSize: theme('fontSize.btn'),
@@ -103,6 +107,16 @@ export default {
         '.btn-yellow': {
           backgroundColor: theme('colors.pri-yellow'),
           borderColor: theme('colors.pri-yellow'),
+          color: theme('colors.sec-dark-gray'),
+          '&:hover': {
+            backgroundColor: theme('colors.pri-dark-gray'),
+            color: theme('colors.sec-light-gray'),
+            borderColor: theme('colors.pri-dark-gray'),
+          }
+        },
+        '.btn-white': {
+          backgroundColor: theme('colors.sec-white'),
+          borderColor: theme('colors.sec-white'),
           color: theme('colors.sec-dark-gray'),
           '&:hover': {
             backgroundColor: theme('colors.pri-dark-gray'),

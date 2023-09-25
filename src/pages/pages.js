@@ -12,36 +12,36 @@ export const links = [
     title: "Home", 
     link: {
       name: "/"
-    }
+    },
   },
   {
     title: "About", 
     link: {
       name: "about"
-    }
+    },
   },
   {
     title: "Services", 
     link: {
       name: "services"
-    }
+    },
   },
   {
     title: "Team", 
     link: {
       name: "team"
-    }
+    },
   },
   {
     title: "CaseStudy", 
     link: {
       name: "casestudy"
-    }
+    },
   },
   {
     title: "Contact", 
     link: {
       name: "contact"
-    }
+    },
   },
 ]
