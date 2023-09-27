@@ -29,7 +29,7 @@ const Navbar = () => {
             onClick={() => handleIsActive(item.title.toLowerCase())}
           >
             <p
-              className={`${activePage === item.title.toLowerCase() ? "active border-pri-green" : "border-[#1b1b1bed] "} border-b-2 transition ease-in text-white  py-2`}
+              className={`${activePage === item.title.toLowerCase() ? "active border-pri-green" : "border-[#1b1b1bed] "} border-b-2 transition ease-in text-white py-2`}
             >
               {item.title}
             </p>
@@ -41,7 +41,7 @@ const Navbar = () => {
         text={"+62 813 9232 7330"}
         variations={"btn-white"}
         icon={phone}
-        addClass={"flex items-center gap-4 rounded-[36px] pr-[16px]"}
+        addClass={"flex items-center gap-4 btn-iconic"}
       />
     </nav>
   );
