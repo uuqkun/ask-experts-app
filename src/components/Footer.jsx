@@ -1,8 +1,7 @@
-import React from 'react'
 
 const Footer = () => {
   return (
-    <footer>
+    <footer className="z-10">
       <h3>footer</h3>
     </footer>
   )

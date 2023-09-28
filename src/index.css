@@ -2,12 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-#root { 
+#root {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.active { 
+.active {
   @apply text-pri-green;
+}
+
+.hero-img {
+  object-position: 0 -20px;
+  object-fit: cover;
 }

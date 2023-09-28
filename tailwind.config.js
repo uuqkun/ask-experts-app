@@ -79,10 +79,10 @@ export default {
       });
       addComponents({
         ".btn-iconic": {
-          padding: "10px",
+          padding: "8px",
         },
         ".btn-base-pad": {
-          padding: "10px 32px",
+          padding: "8px 32px",
         },
         ".bg-card-transparent": {
           backgroundColor: "rgba(255, 255, 255, 0.85)",
