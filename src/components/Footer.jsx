@@ -23,9 +23,9 @@ const Footer = () => {
                   <a
                     href={item.li}
                     key={item.name}
-                    className="text-p-normal cursor-pointer py-2 mb-2"
+                    className="text-p-normal cursor-pointer"
                   >
-                    <li className="list-disc text-sec-white">{item.name}</li>
+                    <li className="list-disc text-sec-white py-1 mb-1 hover:text-pri-green transition-all ease-linear">{item.name}</li>
                   </a>
                 ))}
               </ul>
