@@ -4,9 +4,9 @@ import { Button, Affiliation } from "../components/components";
 
 const Home = () => {
   return (
-    <div className="w-full relative h-[850px]">
+    <div className="w-full">
       {/* Hero section */}
-      <div className="flex justify-between items-center md:w-[1210px] h-full py-10 mx-auto">
+      <div className="flex justify-between items-center h-[850px] py-10 relative">
         <img
           src={headerImg}
           alt="header image"
@@ -14,7 +14,7 @@ const Home = () => {
         />
 
         {/* hero card */}
-        <div className="bg-card-transparent rounded-2xl w-[580px] p-[58px] z-[1] mt-40 shadow-xl">
+        <div className="bg-card-transparent rounded-2xl w-[580px] p-[58px] z-[1] shadow-xl ml-[10%] mt-[0]">
           <h1 className="mb-3">Your Small Bussiness Growth Advisor</h1>
           <p className="mb-8">
             Get help from Alex Moore, a professional business coach with
@@ -35,7 +35,7 @@ const Home = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Affiliations */}
       <Affiliation />
     </div>

@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { Contact, links } from "../pages/pages";
-import { Button } from "./components";
-import { Logo, phone } from "../assets/assets";
+import { Button, AskExLogo } from "./components";
+import { phone } from "../assets/assets";
 
 const Navbar = () => {
   const [activePage, setActivePage] = useState("home");
@@ -14,10 +14,7 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between items-center md:w-[1210px] py-10">
       {/* Logo */}
-      <div className="flex items-center gap-4">
-        <img src={Logo} alt="ask experts logo" />
-        <h3 className="text-sec-white">AskExperts</h3>
-      </div>
+      <AskExLogo />
 
       {/* Nav Buttons */}
       <ul className="flex gap-7">

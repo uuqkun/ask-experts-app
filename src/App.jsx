@@ -31,18 +31,9 @@ const App = () => {
         <Route path="/casestudy" Component={CaseStudy} />
         <Route path="/contact" Component={Contact} />
         <Route path="*" Component={NotFound} />
-
-        {/* Team */}
-        {/* Case Study */}
-        {/* Contact */}
-
-        {/* Blog */}
-        {/* Change Log */}
-        {/* Protection */}
-        {/* 404 Not Found */}
       </Routes>
-
-      <div className="">
+      
+      <div className="w-full flex justify-center bg-[#1b1b1bed]">
         <Footer />
       </div>
     </Router>
