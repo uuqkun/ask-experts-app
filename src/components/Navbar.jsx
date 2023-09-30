@@ -26,7 +26,11 @@ const Navbar = () => {
             onClick={() => handleIsActive(item.title.toLowerCase())}
           >
             <p
-              className={`${activePage === item.title.toLowerCase() ? "active border-pri-green" : "border-[#1b1b1bed] "} border-b-2 transition ease-in text-white py-2`}
+              className={`${
+                activePage === item.title.toLowerCase()
+                  ? "active border-pri-green"
+                  : "border-[#1b1b1bed] "
+              } border-b-2 transition ease-in text-white py-2`}
             >
               {item.title}
             </p>
@@ -34,12 +38,14 @@ const Navbar = () => {
         ))}
       </ul>
       {/* Contact Button */}
-      <Button
-        text={"+62 813 9232 7330"}
-        variations={"btn-white"}
-        icon={phone}
-        addClass={"flex items-center gap-4 btn-iconic"}
-      />
+      <a
+        href="https://api.whatsapp.com/send?phone=6281392327330"
+        className="btn-white btn-base btn-iconic flex items-center gap-3"
+        target="_blank"
+      >
+        <img src={phone} alt="whatsapp" />
+        <span className="mr-4">+62 813 9232 7330</span>
+      </a>
     </nav>
   );
 };
