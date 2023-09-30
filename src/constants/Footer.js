@@ -4,47 +4,45 @@ export const footer = [
     items: [
       {
         name: "Service",
-        link: "/services"
+        link: "/services",
       },
       {
         name: "FAQ",
-        link: "/FAQ"
+        link: "/FAQ",
       },
       {
         name: "Get Quote",
-        link: "/getQuote"
+        link: "/getQuote",
       },
       {
         name: "Prices",
-        link: "/prices"
+        link: "/prices",
       },
-    ]
-  }, 
+    ],
+  },
   {
     title: "Company",
     items: [
       {
         name: "About",
-        link: "/about"
+        link: "/about",
       },
       {
         name: "Contact",
-        link: "/contact"
+        link: "/contact",
       },
       {
         name: "Testimonials",
-        link: "/testimonials"
+        link: "/testimonials",
       },
       {
         name: "Our Team",
-        link: "/our Team"
+        link: "/our Team",
       },
       {
         name: "Our Approach",
-        link: "/our Approach"
+        link: "/our Approach",
       },
-    ]
-  }, 
+    ],
+  },
 ];
-
-

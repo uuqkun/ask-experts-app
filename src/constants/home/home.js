@@ -5,9 +5,9 @@ import {
   client4,
   client5,
   client6,
-} from "../assets/homepage/home_assets";
+} from "../../assets/homepage/home_assets";
 
-export const brands = [
+export const affiliation = [
   {
     name: "Studio Green",
     link: "https://www.google.com",

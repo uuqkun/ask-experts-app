@@ -1,6 +1,7 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
+
 import { gps, time } from "../assets/assets";
-import { socialMedia } from "../constants/Topbar";
+import { socialMedia } from "../constants/topbar";
 
 const formatDate = (date) => {
   const options = {
@@ -11,24 +12,6 @@ const formatDate = (date) => {
 
   return date.toLocaleDateString("id-ID", options);
 };
-
-/**
- const getUserLocation = () => {
-      navigator.geolocation.getCurrentPosition(
-        (position) => {
-         const latitude = position.coords.latitude;
-         const longitude = position.coords.longitude;
-    
-         console.log("Lintang:", latitude);
-         console.log("Bujur:", longitude);
-       },
-       (error) => {
-         console.error("Kesalahan Geolocation:", error);
-       }
-     );
- };
- * 
- */
 
 const Topbar = () => {
   const [date, setDate] = useState();
