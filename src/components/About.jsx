@@ -23,7 +23,7 @@ const About = () => {
           experience on growth and business scaling.
         </p>
 
-        <div className="mt-20 flex items-center justify-start gap-10">
+        <div className="mt-20 flex flex-wrap md:flex-nowrap items-center justify-start gap-10">
           {/* cards */}
           <div className="py-6 px-10 rounded-2xl bg-gray-50 w-fit">
             <div className="mb-2 flex items-center justify-center gap-4">
