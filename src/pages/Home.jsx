@@ -1,15 +1,16 @@
-import { Hero, About } from "../components/components";
+import { Hero, About, Affiliation } from "../components/components";
 
 const Home = () => {
   return (
     <div className="w-full">
       {/* Hero section */}
       <Hero />
+      <Affiliation />
 
       {/* About section */}
-      <About />
-
-
+      <div className="w-full flex justify-around mb-40">
+        <About />
+      </div>
     </div>
   );
 };

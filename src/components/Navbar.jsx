@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import { Contact, links } from "../pages/pages";
-import { Button, AskExLogo } from "./components";
+import { links } from "../pages/pages";
+import { AskExLogo } from "./components";
 import { phone } from "../assets/assets";
 
 const Navbar = () => {

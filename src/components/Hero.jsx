@@ -1,6 +1,6 @@
 import { calendar } from "../assets/assets";
 import { headerImg } from "../assets/homepage/home_assets";
-import { Affiliation, Button } from "./components";
+import { Button } from "./components";
 const Hero = () => {
   return (
     <>
@@ -33,9 +33,6 @@ const Hero = () => {
           </div>
         </div>
       </div>
-
-      {/* Affiliations */}
-      <Affiliation />
     </>
   );
 };

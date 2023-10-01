@@ -16,3 +16,4 @@ export { default as ContactForm } from "./ContactForm";
 export { default as Button } from "./Button";
 export { default as Affiliation } from "./Affiliation";
 export { default as AskExLogo } from "./AskExLogo";
+export { default as SectionTag } from "./SectionTag";
