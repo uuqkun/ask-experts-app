@@ -1,4 +1,4 @@
-export { default as aboutUs } from "./aboutUs.jpeg";
+export { default as aboutUs } from "./aboutUs.png";
 export { default as blog1 } from "./blog1.png";
 export { default as blog2 } from "./blog2.png";
 export { default as blogUser1 } from "./blogUser1.png";
