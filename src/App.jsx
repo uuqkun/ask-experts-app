@@ -33,7 +33,7 @@ const App = () => {
         <Route path="*" Component={NotFound} />
       </Routes>
       
-      <div className="w-full flex justify-center bg-[#1b1b1bed]">
+      <div className="w-full flex justify-center bg-[rgba(27,27,27,0.93)]">
         <Footer />
       </div>
     </Router>

@@ -8,6 +8,10 @@
   align-items: center;
 }
 
+::-webkit-scrollbar { 
+  width: 0;
+}
+
 .active {
   @apply text-pri-green;
 }
