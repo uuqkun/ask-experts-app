@@ -30,6 +30,7 @@ export default {
         "p-normal": "16px",
         "p-md": "18px",
         "p-sm": "14px",
+        "p-xs": "12px",
         "nav": "20px",
         "quote": "32px",
       },
@@ -43,31 +44,49 @@ export default {
           fontWeight: "700",
           fontFamily: theme("fontFamily.cabin"),
           lineHeight: "1.25em",
+          "@media screen and (max-width: 640px)": {
+            fontSize: "40px",
+          }
         },
         h2: {
           fontSize: theme("fontSize.head-2"),
           fontWeight: "700",
           fontFamily: theme("fontFamily.cabin"),
+          "@media screen and (max-width: 640px)": {
+            fontSize: "35px",
+          }
         },
         h3: {
           fontSize: theme("fontSize.head-3"),
           fontWeight: "400",
           fontFamily: theme("fontFamily.cabin"),
+          "@media screen and (max-width: 640px)": {
+            fontSize: "30px",
+          }
         },
         h4: {
           fontSize: theme("fontSize.head-4"),
           fontWeight: "600",
           fontFamily: theme("fontFamily.cabin"),
+          "@media screen and (max-width: 640px)": {
+            fontSize: "25px",
+          }
         },
         h5: {
           fontSize: theme("fontSize.head-5"),
           fontWeight: "600",
           fontFamily: theme("fontFamily.cabin"),
+          "@media screen and (max-width: 640px)": {
+            fontSize: "20px",
+          }
         },
         h6: {
           fontSize: theme("fontSize.head-6"),
           fontWeight: "600",
           fontFamily: theme("fontFamily.cabin"),
+          "@media screen and (max-width: 640px)": {
+            fontSize: "15px",
+          }
         },
         p: {
           fontSize: theme("fontSize.p-normal"),
@@ -76,6 +95,9 @@ export default {
           color: theme("colors.sec-paragraph"),
           letterSpacing: ".75px",
           lineheight: "24px",
+          "@media screen and (max-width: 640px)": {
+            fontSize: theme("fontSize.p-sm"),
+          }
         },
       });
       addComponents({
@@ -105,6 +127,9 @@ export default {
           borderRadius: "42px",
           letterSpacing: ".75px",
           transition: "all .1s ease-in",
+          "@media screen and (max-width: 640px)": {
+            fontSize: theme("fontSize.p-xs"),
+          }
         },
         ".btn-dark": {
           backgroundColor: theme("colors.pri-dark-gray"),

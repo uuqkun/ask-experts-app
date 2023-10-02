@@ -16,7 +16,7 @@ const About = () => {
         <SectionTag text="About" variants="green2" />
         <h2 className="leading-tight mb-6">About our Consulting Agency Team</h2>
         <p className="text-p-md font-semibold mb-3">
-          We create experiences and build products that make business grow
+          We create experiences and  build products that make business grow
         </p>
         <p>
           Get help from Alex Moore, a professional business coach with advanced
