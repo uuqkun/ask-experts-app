@@ -15,7 +15,7 @@ const formatDate = (date) => {
 
 const Topbar = () => {
   const [date, setDate] = useState();
-  
+
   useEffect(() => {
     const interval = setInterval(() => {
       let today = new Date();
@@ -26,26 +26,28 @@ const Topbar = () => {
   }, []);
 
   return (
-    <div className="flex justify-between items-center md:w-[1210px] py-[18px]">
-      <div className="flex gap-2 items-center">
-        <img className="icon-standart" src={time} alt="time icon" />
-        <p className="text-sec-light-gray text-p-sm">{date}</p>
-      </div>
-      <div className="flex gap-2 items-center">
-        <img className="icon-standart" src={gps} alt="gps icon" />
-        <p className="text-sec-light-gray text-p-sm">Indonesia</p>
-      </div>
-      <div className="flex justify-center gap-6">
-        {socialMedia.map((icons) => (
-          <a
-            href={icons.link}
-            key={icons.name}
-            className="icon-standart"
-            target="_blank"
-          >
-            <img className="w-full h-full" src={icons.src} alt={icons.name} />
-          </a>
-        ))}
+    <div className="md:w-[1210px] py-[18px]">
+      <div className="flex justify-center sm:justify-between items-center flex-wrap gap-6 w-[90%] lg:w-full mx-auto">
+        <div className="flex gap-2 items-center">
+          <img className="icon-standart" src={time} alt="time icon" />
+          <p className="text-sec-light-gray text-p-sm">{date}</p>
+        </div>
+        <div className="flex gap-2 items-center">
+          <img className="icon-standart" src={gps} alt="gps icon" />
+          <p className="text-sec-light-gray text-p-sm">Indonesia</p>
+        </div>
+        <div className="flex justify-center gap-6">
+          {socialMedia.map((icons) => (
+            <a
+              href={icons.link}
+              key={icons.name}
+              className="icon-standart"
+              target="_blank"
+            >
+              <img className="w-full h-full" src={icons.src} alt={icons.name} />
+            </a>
+          ))}
+        </div>
       </div>
     </div>
   );
