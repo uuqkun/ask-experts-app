@@ -3,9 +3,9 @@ import { AskExLogo, Button } from "./components";
 
 const Footer = () => {
   return (
-    <footer className="flex flex-col items-stretch md:w-[1210px] z-10 mt-32">
+    <footer className="flex flex-col items-center md:w-[1210px] z-10 mt-32">
       {/* vertical */}
-      <div className="flex items-start">
+      <div className="flex flex-col lg:flex-row gap-20 justify-center lg:justify-between w-[85%] lg:w-full items-start">
         {/* logo  ||  Horizontal */}
         <div>
           <AskExLogo />
@@ -13,9 +13,9 @@ const Footer = () => {
         </div>
 
         {/* footer nav items */}
-        <div className="flex justify-end gap-20 flex-1">
+        <div className="flex lg:justify-end gap-20 flex-1 flex-wrap md:flex-nowrap">
           {footer.map((items) => (
-            <div key={items.title} className="w-1/6">
+            <div key={items.title} className="lg:w-1/6">
               <p className="text-nav text-sec-white mb-4">{items.title}</p>
               <div className="w-[34px] h-[3px] rounded-full bg-pri-yellow mb-6" />
               <ul className="ml-7">
