@@ -1,11 +1,21 @@
-import React from 'react'
+
+import { HeaderSection } from "./components";
+
 
 const Process = () => {
   return (
-    <div>
-      <h3>process</h3>
-    </div>
-  )
-}
+    <section>
+      {/* left side */}
+      <div className="">
+        <HeaderSection />
+      </div>
 
-export default Process
+      {/* right side */}
+      <div className="">
+        <HeaderSection />
+      </div>
+    </section>
+  );
+};
+
+export default Process;

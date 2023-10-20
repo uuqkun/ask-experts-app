@@ -1,18 +1,21 @@
 import { NavLink } from "react-router-dom";
 
 import services from "../constants/services/services";
-import SectionTag from "./SectionTag";
+
+import { HeaderSection } from "./components";
 
 const Services = () => {
+  let headerProps = {
+    alignContent: "center",
+    tagText: "Process",
+    tagVariant: "yellow1",
+    content: "Get Control Over Your Business I take your finance to next level",
+  };
+
   return (
-    <section className="flex justify-center">
+    <section className="flex justify-center mb-40 py-10">
       <div className="lg:w-[1210px] w-[80%]">
-        <header className="max-w-[704px] mx-auto items-center flex flex-col justify-center">
-          <SectionTag text={"services"} variants={"green1"} />
-          <h2 className="text-center mb-10">
-            Get Control Over Your Business I take your finance to next level
-          </h2>
-        </header>
+        <HeaderSection {...headerProps} />
 
         <ul className="flex flex-wrap justify-center gap-5">
           {services.map((item) => (

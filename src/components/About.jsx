@@ -1,22 +1,23 @@
+
 import { happy, star12 } from "../assets/assets";
 import { aboutUs } from "../assets/homepage/home_assets";
-import { SectionTag } from "./components";
-
-// sm = 640px
-// md = 768px
-// lg = 1024px
-// xl = 1280px
-// 2xl = 1536px
+import { HeaderSection } from "./components";
 
 const About = () => {
+  const headerProps = {
+    alignContent: "left",
+    tagText: "About",
+    tagVariant: "green1",
+    content: "About our Consulting Agency Team",
+  };
+
   return (
     <div className="flex justify-between items-center flex-wrap gap-20 w-[80%] lg:w-[1210px] py-10 ">
       {/* texts */}
       <div className="flex-1">
-        <SectionTag text="About" variants="green2" />
-        <h2 className="leading-tight mb-6">About our Consulting Agency Team</h2>
+        <HeaderSection {...headerProps} />
         <p className="text-p-md font-semibold mb-3">
-          We create experiences and  build products that make business grow
+          We create experiences and build products that make business grow
         </p>
         <p>
           Get help from Alex Moore, a professional business coach with advanced
