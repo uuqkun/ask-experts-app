@@ -8,7 +8,7 @@ const Services = () => {
   let headerProps = {
     alignContent: "center",
     tagText: "Process",
-    tagVariant: "yellow1",
+    tagVariant: "yellow2",
     content: "Get Control Over Your Business I take your finance to next level",
   };
 
