@@ -21,7 +21,7 @@ const ImageGallery = () => {
           <Button text="More" variations="btn-yellow" addClass="btn-base-pad"/>
         </div>
 
-        <ul className="flex flex-wrap justify-center lg:gap-10 gap-6 lg:bg-white py-10 px-4 rounded-[28px] lg:shadow-xl">
+        <ul className="flex sm:flex-wrap flex-nowrap sm:justify-center sm:w-full overflow-x-scroll w-[300%] lg:gap-10 gap-6 lg:bg-white py-10 px-4 rounded-[28px] lg:shadow-xl ">
             {gallery.map(pict => (
                 <li className="lg:w-[366px] w-[260px] lg:h-[344px] h-[260px] lg:shadow-none shadow-lg rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-xl">
                     <img src={pict.icon} alt={pict.alt} className="object-cover w-full h-full"/>

@@ -2,7 +2,7 @@ import { Hero, About, Affiliation, Services, Process, ImageGallery } from "../co
 
 const Home = () => {
   return (
-    <div className="w-full">
+    <div className="w-full overflow-hidden">
       {/* Hero section */}
       <Hero />
       
