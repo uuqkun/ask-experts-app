@@ -1,4 +1,4 @@
-import { Hero, About, Affiliation, Services, Process } from "../components/components";
+import { Hero, About, Affiliation, Services, Process, ImageGallery } from "../components/components";
 
 const Home = () => {
   return (
@@ -19,6 +19,8 @@ const Home = () => {
 
       {/* process */}
       <Process />
+
+      <ImageGallery/>
 
       
       
