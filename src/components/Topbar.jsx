@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 import { gps, time } from "../assets/assets";
-import { socialMedia } from "../constants/topbar";
+import { socialMedia } from "../constants/Topbar";
 
 const formatDate = (date) => {
   const options = {

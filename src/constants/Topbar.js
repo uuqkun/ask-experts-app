@@ -1,4 +1,5 @@
 import { Facebook, Twitter, LinkedIn, Instagram } from "../assets/assets";
+
 export const socialMedia = [
   {
     name: "Instagram",
