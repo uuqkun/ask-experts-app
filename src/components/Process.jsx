@@ -7,7 +7,7 @@ const Process = () => {
       left: {
         alignContent: "left",
         tagText: "Process",
-        tagVariant: "green1",
+        tagVariant: "green2",
         content: "There have some easy steps to join with us!",
       },
       right: {
@@ -71,7 +71,7 @@ const Process = () => {
                 key={item.id}
                 className="px-6 py-8 bg-gray-50 rounded-xl lg:max-w-[280px] max-w-[300px] border border-gray-200"
               >
-                <img src={item.icon} alt={item.title} className="mb-6" />
+                <img src={item.icon} alt={item.title} className="mb-6 w-[54px] h-[54px]" />
                 <h5 className="mb-2">{item.title}</h5>
                 <p>{item.desc}</p>
               </li>

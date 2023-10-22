@@ -98,7 +98,7 @@ const Navbar = () => {
             className="btn-white btn-base btn-iconic flex items-center gap-3"
             target="_blank"
           >
-            <img src={phone} alt="whatsapp" />
+            <img src={phone} alt="whatsapp" className="w-[44px] h-[44px]" />
             <span className="mr-4">+62 813 9232 7330</span>
           </a>
         </div>

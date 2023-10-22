@@ -17,20 +17,20 @@
 }
 
 .hero-img {
-  @apply w-full h-full object-cover;
-  background: url("src/assets/homepage/headerImg.png") no-repeat;
+  background: url("https://s6.imgcdn.dev/9MMgg.md.png") no-repeat;
   background-size: cover;
   object-position: 0 -20px;
+  @apply w-full h-full object-cover;
 }
 
 @media screen and (max-width: 768px) {
   .hero-img { 
-    background: url("src/assets/homepage/smheaderImg.png") no-repeat;
+    background: url("https://s6.imgcdn.dev/9M4SN.md.png") no-repeat;
     background-size: 100% 100%;
   }
 }
 
 .bg-gallery {
-  background: url(assets/homepage/bg-gallery.png);
+  background: url("https://s6.imgcdn.dev/96xMu.png");
   @apply bg-pri-heading;
 }

@@ -27,7 +27,7 @@ const Services = () => {
               <img
                 src={item.icon}
                 alt={item.title}
-                className="w-[84px] hover:text-white mb-6"
+                className="w-[84px] h-[84px] hover:text-white mb-6"
               />
               <h5>{item.title}</h5>
               <p>{item.desc}</p>

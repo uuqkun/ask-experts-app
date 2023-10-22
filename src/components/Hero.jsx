@@ -1,5 +1,4 @@
 import { calendar } from "../assets/assets";
-import { headerImg } from "../assets/homepage/home_assets";
 import { Button } from "./components";
 const Hero = () => {
   return (
@@ -31,6 +30,7 @@ const Hero = () => {
               text={"Book a Meeting"}
               variations={"btn-white"}
               icon={calendar}
+              iconSize="w-[44px] h-[44px]"
               addClass={"flex items-center gap-1 lg:gap-4 rounded-[42px] btn-iconic"}
             />
           </div>
