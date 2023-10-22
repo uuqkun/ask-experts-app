@@ -21,7 +21,6 @@ const Home = () => {
       <Process />
 
       <ImageGallery/>
-
       
       
     </div>
