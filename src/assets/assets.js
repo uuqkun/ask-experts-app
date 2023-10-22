@@ -22,7 +22,7 @@ export { default as Logo } from "./icons/Logo.svg";
 export { default as next } from "./icons/next.svg";
 export { default as prev } from "./icons/prev.svg";
 export { default as quote } from "./icons/quote.svg";
-export { default as star12 } from "./icons/star12.svg";
+export { default as star12 } from "./icons/Star12.svg";
 export { default as menu3x } from "./icons/menu.svg";
 export { default as cross } from "./icons/cross.svg";
 
