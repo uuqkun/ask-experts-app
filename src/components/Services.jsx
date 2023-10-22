@@ -14,7 +14,7 @@ const Services = () => {
 
   return (
     <section className="flex justify-center mb-40 py-10">
-      <div className="lg:w-[1210px] w-[80%]">
+      <div className="lg:w-[1210px] w-[85%]">
         <HeaderSection {...headerProps} />
 
         <ul className="flex flex-wrap justify-center gap-5">
