@@ -38,7 +38,7 @@ Clone the project
 Go to the project directory
 
 ```bash
- cd ask-experts-app/
+ cd askExperts-app/
 ```
 
 Install dependencies
