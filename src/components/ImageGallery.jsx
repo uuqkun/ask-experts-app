@@ -12,7 +12,7 @@ const ImageGallery = () => {
             {...{
               alignContent: "left",
               tagText: "Process",
-              tagVariant: "green1",
+              tagVariant: "green2",
               content:
                 "Our client, global analytical techno company, wanted to build market.",
               color: "text-white",
@@ -29,6 +29,7 @@ const ImageGallery = () => {
                   src={pict.icon}
                   alt={pict.alt}
                   className="object-cover w-full h-full"
+                  
                 />
               </li>
             ))}

@@ -1,13 +1,11 @@
-
 import { happy, star12 } from "../assets/assets";
-import { aboutUs } from "../assets/homepage/home_assets";
 import { HeaderSection } from "./components";
 
 const About = () => {
   const headerProps = {
     alignContent: "left",
     tagText: "About",
-    tagVariant: "green1",
+    tagVariant: "green2",
     content: "About our Consulting Agency Team",
   };
 
@@ -31,7 +29,7 @@ const About = () => {
               <img
                 src={star12}
                 alt="bussiness services ratings"
-                className="w-[30px]"
+                className="w-[30px] h-[30px]"
               />
               <h5>400+</h5>
             </div>
@@ -39,7 +37,11 @@ const About = () => {
           </div>
           <div className="py-6 px-10 rounded-2xl bg-gray-50 w-fit">
             <div className="mb-2 flex items-center justify-center gap-4">
-              <img src={happy} alt="Happy Customers" className="w-[30px]" />
+              <img
+                src={happy}
+                alt="Happy Customers"
+                className="w-[30px] h-[30px]"
+              />
               <h5>100+</h5>
             </div>
             <p className="font-semibold text-center">Happy Customer</p>
@@ -49,7 +51,11 @@ const About = () => {
 
       {/* image */}
       <div className="relative">
-        <img src={aboutUs} alt="about ask experts" />
+        <img
+          src="https://s6.imgcdn.dev/9MBKS.png"
+          alt="about ask experts"
+          className="lg:w-[716px] lg:h-[466px] sm:w-[550px] sm:h-[358px] w-[350px] h-[228px]"
+        />
       </div>
     </div>
   );
