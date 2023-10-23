@@ -21,20 +21,23 @@ const ImageGallery = () => {
           <Button text="More" variations="btn-yellow" addClass="btn-base-pad" />
         </div>
 
+        {/* Gallery */}
         <div className="w-full overflow-x-scroll">
           <ul className="flex sm:flex-wrap sm:justify-center justify-start sm:w-full min-w-fit lg:gap-10 gap-6 sm:bg-white py-10 px-4 rounded-[28px] lg:shadow-xl">
             {gallery.map((pict) => (
-              <li className="lg:w-[366px] w-[260px] lg:h-[344px] h-[260px] lg:shadow-none shadow-lg rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-xl" key={pict.alt}>
+              <li
+                className="lg:w-[366px] w-[260px] lg:h-[344px] h-[260px] lg:shadow-none shadow-lg rounded-3xl overflow-hidden transition-all hover:scale-105 hover:shadow-xl"
+                key={pict.alt}
+              >
                 <img
                   src={pict.icon}
                   alt={pict.alt}
                   className="object-cover w-full h-full"
-                  
                 />
               </li>
             ))}
           </ul>
-        </div>
+        </div>        
       </div>
     </section>
   );
