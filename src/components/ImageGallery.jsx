@@ -3,7 +3,7 @@ import { Button, HeaderSection } from "./components";
 
 const ImageGallery = () => {
   return (
-    <section className="flex justify-center mb-40 relative pt-20">
+    <section className="flex justify-center mb-10 relative pt-20">
       <div className="bg-gallery absolute top-0 left-0 z-[-1] w-full lg:h-[445px] sm:h-[50%] h-[70%]" />
 
       <div className="lg:w-[1210px] w-[85%]">

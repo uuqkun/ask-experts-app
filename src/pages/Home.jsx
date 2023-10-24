@@ -1,4 +1,4 @@
-import { Hero, About, Affiliation, Services, Process, ImageGallery } from "../components/components";
+import { Hero, About, Affiliation, Services, Process, ImageGallery, Counter } from "../components/components";
 
 const Home = () => {
   return (
@@ -20,7 +20,11 @@ const Home = () => {
       {/* process */}
       <Process />
 
+      {/* Gallery */}
       <ImageGallery/>
+
+      {/* Counter */}
+      <Counter />
       
     </div>
   );
