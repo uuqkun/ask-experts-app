@@ -25,5 +25,6 @@ export { default as quote } from "./icons/quote.svg";
 export { default as star12 } from "./icons/Star12.svg";
 export { default as menu3x } from "./icons/menu.svg";
 export { default as cross } from "./icons/cross.svg";
+export { default as bgCTA } from "./icons/cta.svg";
 
 
