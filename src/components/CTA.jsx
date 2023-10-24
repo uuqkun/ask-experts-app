@@ -5,6 +5,7 @@ const CTA = () => {
     <section className="flex justify-center mb-10 relative pt-20">
       <div className="lg:w-[1210px] w-[85%]">
         <h2>CTA</h2>
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, quasi!
       </div>
     </section>
   );
