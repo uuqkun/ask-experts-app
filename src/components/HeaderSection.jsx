@@ -1,21 +1,19 @@
 import { SectionTag } from "./components";
 
 const HeaderSection = ({
-  alignContent = "right",
+  alignContent = "left",
   tagText = "Empty",
   tagVariant = "green2",
   content = "Empty h2 tag",
   color = "text-black"
 }) => {
-  let isRight = alignContent.toLowerCase() === "right";
-  let isCenter = alignContent.toLowerCase() === "center";
 
-  return isCenter ? (
+  return alignContent === "center" ? (
     <header className={`max-w-[704px] flex flex-col mx-auto items-center ${color}`}>
       <SectionTag text={tagText} variants={tagVariant} />
       <h2 className={`text-center`}>{content}</h2>
     </header>
-  ) : isRight ? (
+  ) : alignContent === "right" ? (
     <header className={`max-w-[704px] flex flex-col items-end ${color}`}>
       <SectionTag text={tagText} variants={tagVariant} />
       <h2 className={`text-right`}>{content}</h2>

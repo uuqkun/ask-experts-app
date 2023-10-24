@@ -102,7 +102,7 @@ export default {
       });
       addComponents({
         ".btn-iconic": {
-          padding: "8px",
+          padding: "8px 24px 8px 8px",
         },
         ".btn-base-pad": {
           padding: "8px 32px",
