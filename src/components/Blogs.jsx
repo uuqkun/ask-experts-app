@@ -1,46 +1,53 @@
 import { NavLink } from "react-router-dom";
-import { HeaderSection, Button } from "./components";
 import { useEffect, useState } from "react";
 
-const getConnection = async () => {
-  const url =
-    "https://newsdata.io/api/1/news?apikey=pub_3181024063b4fadeb878f8d21abccde96b398";
+import { HeaderSection, Button } from "./components";
+import { bgCTA } from "../assets/assets";
+import useFetch from "../hooks/useFetch";
 
-  const option = {
-    method: "GET",
-    headers: {},
-  };
-
-
-  let res = [];
-
-  try {
-    const response = await fetch(url, option);
-    const result = await response.json()
-
-    let temp = result['results'];
-
-    console.log(temp)
-    // for (let i = 0; i < 3; i++) {
-    //   const ar = temp[i];
-    //   res.push(ar);
-    // }
-  } catch (error) {
-    console.error(error);
-  }
-
-  return res;
-};
+const staticData = [
+  {
+    id: "126a2afd6d26e069af62e85c33193e8b",
+    title: "California’s Death Valley and the driest place in North America",
+    description: "Parched ground turned to ponds, wildflowers are in bloom in remote areas and a salt flat is now a massive lake. The salt flat-turned-lake is an exceptional but fleeting sight to behold.",
+    creator: "Cnn Com Wire Service"
+  },
+  {
+    id: "126a2afd6d26e069af62e85c33193e9b",
+    title: "California’s Death Valley and the driest place in North America",
+    description: "Parched ground turned to ponds, wildflowers are in bloom in remote areas and a salt flat is now a massive lake. The salt flat-turned-lake is an exceptional but fleeting sight to behold.",
+    creator: "Cnn Com Wire Service"
+  },
+  {
+    id: "126a2afd6d26e069af62e85c33193e2b",
+    title: "California’s Death Valley and the driest place in North America",
+    description: "Parched ground turned to ponds, wildflowers are in bloom in remote areas and a salt flat is now a massive lake. The salt flat-turned-lake is an exceptional but fleeting sight to behold.",
+    creator: "Cnn Com Wire Service"
+  },
+]
 
 const Blogs = () => {
-  const [articles, setArticles] = useState([]);
-
+  const [articles, setArticles] = useState();
 
   useEffect(() => {
-    setArticles(getConnection);
-    console.log(getConnection)
+    // useFetch(
+    //   "https://newsdata.io/api/1/news?apikey=pub_3181024063b4fadeb878f8d21abccde96b398&country=id,gb,us"
+    // ).then((data) => {
+    //   let arr = [];
+    //   let results = data.results;
+    //   console.log(results);
+
+    //   for (let i = 0; i < 3; i++) {
+    //     const element = results[i];
+    //     arr.push(element);
+    //   }
+
+    //   // Set current articles state
+    //   setArticles(arr);
+    // });
+    
   }, []);
-  
+
   return (
     <section className="flex justify-center mb-10 relative pt-20">
       {/* container */}
@@ -58,19 +65,41 @@ const Blogs = () => {
 
         {/* content */}
         <ul className="w-full flex gap-10">
-          {/* {articles.map((item, index) =>
-            item[index].map((i) => (
-              <li className="lg:w-[50%] w-[75%] p-4">
+          {articles ? (
+            articles.map((item) => (
+              <li className="lg:w-[50%] w-[75%] p-4" key={item.article_id}>
                 <div>
-                  <img src="" alt="" />
+                  <img src={bgCTA} alt={item.title} />
                 </div>
-                <h3>{i.title}</h3>
-                <p>{i.description}</p>
+                <h4>{item.title}</h4>
+                <p>{item.description}</p>
+
+                <div>{item.creator != null ? item.creator : "Anonym"}</div>
               </li>
             ))
-          )} */}
-          {console.log(articles)}
+          ) : staticData.map(item => (
+            <li className="lg:w-[50%] w-[75%] p-4" key={item.id}>
+              <div>
+                <img src={bgCTA} alt={item.title} />
+              </div>
+              <h4>{item.title}</h4>
+              <p>{item.description}</p>
+
+              <div>{item.creator}</div>
+            </li>
+          ))}
         </ul>
+        {/* <ul className="w-full flex gap-10">
+          {articles.forEach((item) => (
+            <li className="lg:w-[50%] w-[75%] p-4" key={item.article_id}>
+              <div>
+                <img src="" alt="" />
+              </div>
+              <h3>{item.title}</h3>
+              <p>{item.description}</p>
+            </li>
+          ))}
+        </ul> */}
       </div>
     </section>
   );
