@@ -1,4 +1,3 @@
-import React from "react";
 
 const Button = ({ variations, text, icon, addClass, iconSize }) => {
   return (

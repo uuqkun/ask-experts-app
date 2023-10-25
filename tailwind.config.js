@@ -41,6 +41,7 @@ export default {
       addBase({
         h1: {
           fontSize: theme("fontSize.head-1"),
+          lineHeight: 1.25,
           fontWeight: "700",
           fontFamily: theme("fontFamily.cabin"),
           lineHeight: "1.25em",
@@ -50,6 +51,7 @@ export default {
         },
         h2: {
           fontSize: theme("fontSize.head-2"),
+          lineHeight: 1.25,
           fontWeight: "700",
           fontFamily: theme("fontFamily.cabin"),
           "@media screen and (max-width: 640px)": {
@@ -58,6 +60,7 @@ export default {
         },
         h3: {
           fontSize: theme("fontSize.head-3"),
+          lineHeight: 1.25,
           fontWeight: "400",
           fontFamily: theme("fontFamily.cabin"),
           "@media screen and (max-width: 640px)": {
@@ -66,6 +69,7 @@ export default {
         },
         h4: {
           fontSize: theme("fontSize.head-4"),
+          lineHeight: 1.25,
           fontWeight: "600",
           fontFamily: theme("fontFamily.cabin"),
           "@media screen and (max-width: 640px)": {
@@ -74,6 +78,7 @@ export default {
         },
         h5: {
           fontSize: theme("fontSize.head-5"),
+          lineHeight: 1.25,
           fontWeight: "600",
           fontFamily: theme("fontFamily.cabin"),
           "@media screen and (max-width: 640px)": {
@@ -82,6 +87,7 @@ export default {
         },
         h6: {
           fontSize: theme("fontSize.head-6"),
+          lineHeight: 1.25,
           fontWeight: "600",
           fontFamily: theme("fontFamily.cabin"),
           "@media screen and (max-width: 640px)": {
@@ -105,7 +111,7 @@ export default {
           padding: "8px 24px 8px 8px",
         },
         ".btn-base-pad": {
-          padding: "8px 32px",
+          padding: "16px 32px",
         },
         ".bg-card-transparent": {
           backgroundColor: "rgba(255, 255, 255, 0.85)",
@@ -120,7 +126,6 @@ export default {
         },
         ".btn-base": {
           borderWidth: "1.5px",
-          height: "61px",
           fontFamily: theme("fontFamily.lato"),
           fontSize: theme("fontSize.p-md"),
           fontWeight: "500",
