@@ -1,35 +1,46 @@
 import { NavLink } from "react-router-dom";
 import { HeaderSection, Button } from "./components";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 const getConnection = async () => {
   const url =
-    "https://extract-news.p.rapidapi.com/v0/article";
-  const options = {
+    "https://newsdata.io/api/1/news?apikey=pub_3181024063b4fadeb878f8d21abccde96b398";
+
+  const option = {
     method: "GET",
-    headers: {
-      "X-RapidAPI-Key": "0fd4dad000msh0b64d9a2bffa832p174c5bjsn6de351fb3d8c",
-      "X-RapidAPI-Host": "extract-news.p.rapidapi.com",
-    },
+    headers: {},
   };
 
-  let articles = [];
+
+  let res = [];
 
   try {
-    const response = await fetch(url, options);
-    const result = await response.text();
-    
-    
+    const response = await fetch(url, option);
+    const result = await response.json()
+
+    let temp = result['results'];
+
+    console.log(temp)
+    // for (let i = 0; i < 3; i++) {
+    //   const ar = temp[i];
+    //   res.push(ar);
+    // }
   } catch (error) {
     console.error(error);
   }
+
+  return res;
 };
+
 const Blogs = () => {
+  const [articles, setArticles] = useState([]);
+
+
   useEffect(() => {
-    getConnection();
-
+    setArticles(getConnection);
+    console.log(getConnection)
   }, []);
-
+  
   return (
     <section className="flex justify-center mb-10 relative pt-20">
       {/* container */}
@@ -47,28 +58,18 @@ const Blogs = () => {
 
         {/* content */}
         <ul className="w-full flex gap-10">
-          <li className="lg:w-[50%] w-[75%] p-4">
-            <div>
-              <img src="" alt="" />
-            </div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Eligendi, possimus voluptatum fugit temporibus enim ullam
-              necessitatibus voluptatibus iure veniam aliquam!
-            </p>
-          </li>
-          <li className="lg:w-[50%] w-[75%] p-4">
-            <div>
-              <img src="" alt="" />
-            </div>
-            <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
-            <p>
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-              Eligendi, possimus voluptatum fugit temporibus enim ullam
-              necessitatibus voluptatibus iure veniam aliquam!
-            </p>
-          </li>
+          {/* {articles.map((item, index) =>
+            item[index].map((i) => (
+              <li className="lg:w-[50%] w-[75%] p-4">
+                <div>
+                  <img src="" alt="" />
+                </div>
+                <h3>{i.title}</h3>
+                <p>{i.description}</p>
+              </li>
+            ))
+          )} */}
+          {console.log(articles)}
         </ul>
       </div>
     </section>
