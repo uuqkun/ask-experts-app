@@ -21,7 +21,7 @@ const ContactForm = () => {
             collaborative.
           </p>
 
-          <ul>
+          <ul className="lg:mb-0 mb-20">
             {companyProfile.map((cp) => (
               <NavLink
                 key={cp.title}
@@ -42,33 +42,68 @@ const ContactForm = () => {
         {/* Form */}
         <form>
           <fieldset>
-            <div>
-              <div>
+            {/* input fields */}
+            <div className="flex flex-wrap lg:w-[688px] gap-7 mb-7">
+              <div className="field-container">
                 <label for="fullname">
                   Fullname <span aria-label="required">*</span>
                 </label>
-                <input id="fullname" type="text" name="fullname" required />
+                <input
+                  id="fullname"
+                  type="text"
+                  name="fullname"
+                  required
+                  placeholder="Achmad Furqon"
+                />
               </div>
-              <div>
+              <div className="field-container">
                 <label for="email">
                   Email <span aria-label="required">*</span>
                 </label>
-                <input id="email" type="text" name="email" required />
+                <input
+                  id="email"
+                  type="text"
+                  name="email"
+                  required
+                  placeholder="personalEmail@gmail.com"
+                />
               </div>
-              <div>
+              <div className="field-container">
                 <label for="phone">
                   Phone <span aria-label="required">*</span>
                 </label>
-                <input id="phone" type="text" name="phone" required />
+                <input
+                  id="phone"
+                  type="text"
+                  name="phone"
+                  required
+                  placeholder="+62 822 922 939"
+                />
+              </div>
+              <div className="field-container">
+                <label for="company">Company</label>
+                <input
+                  id="company"
+                  type="text"
+                  name="company"
+                  placeholder="Tell your message..."
+                />
               </div>
             </div>
+
             {/* textarea */}
-            <div>
+            <div className="field-container w-full">
               <label for="company">Company</label>
-              <input id="company" type="text" name="company" />
+              <textarea
+                draggable="false"
+                id="company"
+                type="text"
+                name="company"
+                placeholder="Tell your message..."
+              />
             </div>
           </fieldset>
-          <button type="submit">Send Message</button>
+          <button type="submit" className="btn-base btn-base-pad btn-dark mt-10">Send Message</button>
         </form>
       </main>
     </section>

@@ -42,3 +42,23 @@ svg {
   background: url("https://s6.imgcdn.dev/96xMu.png");
   @apply bg-pri-heading;
 }
+
+input {
+  @apply rounded-full font-lato w-full;
+}
+
+input, textarea { 
+  @apply text-lg focus-visible:outline-pri-green px-6 py-8 border-[1px] border-gray-200 tracking-wider;
+}
+
+label { 
+  @apply text-p-normal;
+}
+
+div:has(>input) { 
+  @apply flex flex-col gap-3 lg:w-[324px] md:w-[300px] sm:w-[240px] w-full;
+}
+
+textarea { 
+  @apply border-[1px] border-gray-200 font-lato w-full lg:h-[150px] h-[110px] rounded-3xl;
+}
