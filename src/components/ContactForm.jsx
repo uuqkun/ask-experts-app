@@ -1,8 +1,8 @@
 import { NavLink } from "react-router-dom";
+import { useState } from "react";
 
 import { HeaderSection, Button } from "./components";
 import { companyProfile } from "../constants/contact/contact";
-import { useState } from "react";
 
 const ContactForm = () => {
   const [inputs, setInputs] = useState({});
@@ -16,16 +16,17 @@ const ContactForm = () => {
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
-
-    document.querySelector('#message-sent').showModal();
     
+    const msgSentModal = document.querySelector("#message-sent");
+
+    msgSentModal.showModal();
     setTimeout(() => {
-      document.querySelector('#message-sent').close();
-    }, 1500);
-    // document.querySelector('form').removeEventListener/
+      msgSentModal.close();
+    }, 2500);
   };
+
   return (
-    <section className="flex justify-center mb-10 relative pt-20">
+    <section className="flex justify-center mb-40 relative pt-20">
       <main className="lg:w-[1210px] w-[85%] flex lg:flex-row flex-col justify-between">
         {/* Text */}
         <div className="lg:w-[420px] w-full">
@@ -67,7 +68,7 @@ const ContactForm = () => {
             {/* input fields */}
             <div className="flex flex-wrap lg:w-[688px] gap-7 mb-7">
               <div className="field-container">
-                <label for="fullname">
+                <label htmlFor="fullname">
                   Fullname <span aria-label="required">*</span>
                 </label>
                 <input
@@ -81,7 +82,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className="field-container">
-                <label for="email">
+                <label htmlFor="email">
                   Email <span aria-label="required">*</span>
                 </label>
                 <input
@@ -95,7 +96,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className="field-container">
-                <label for="phone">
+                <label htmlFor="phone">
                   Phone <span aria-label="required">*</span>
                 </label>
                 <input
@@ -109,7 +110,7 @@ const ContactForm = () => {
                 />
               </div>
               <div className="field-container">
-                <label for="company">Company</label>
+                <label htmlFor="company">Company</label>
                 <input
                   id="company"
                   type="text"
@@ -123,7 +124,7 @@ const ContactForm = () => {
 
             {/* textarea */}
             <div className="field-container w-full">
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea
                 draggable="false"
                 id="message"
@@ -144,8 +145,11 @@ const ContactForm = () => {
           </button>
         </form>
 
-        <dialog id="message-sent">
-          <p>Message Sent</p>
+        <dialog
+          id="message-sent"
+          className="px-10 py-4 bg-pri-green rounded-xl fixed bottom-0 right-0"
+        >
+          <p className="text-white">Message Sent</p>
         </dialog>
       </main>
     </section>
