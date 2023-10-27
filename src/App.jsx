@@ -31,7 +31,7 @@ const App = () => {
         <Route path="*" Component={NotFound} />
       </Routes>
       
-      <div className="w-full flex justify-center bg-[rgba(27,27,27,0.93)]">
+      <div className="w-full flex justify-center footer-container relative">
         <Footer />
       </div>
     </Router>

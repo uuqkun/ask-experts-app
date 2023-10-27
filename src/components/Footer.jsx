@@ -4,8 +4,9 @@ import { AskExLogo, Button } from "./components";
 const Footer = () => {
   return (
     <footer className="flex flex-col items-center md:w-[1210px] z-10 mt-32">
+      <div className="absolute blur-sm top-0 left-0 w-full h-full bg-pri-heading opacity-90" />
       {/* vertical */}
-      <div className="flex flex-col lg:flex-row gap-20 justify-center lg:justify-between w-[85%] lg:w-full items-start">
+      <div className="flex flex-col lg:flex-row gap-20 justify-center lg:justify-between w-[85%] lg:w-full items-start z-10">
         {/* logo  ||  Horizontal */}
         <div>
           <AskExLogo />
