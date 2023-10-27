@@ -1,7 +1,29 @@
+import { NavLink } from "react-router-dom";
+
 import { HeaderSection, Button } from "./components";
 import { companyProfile } from "../constants/contact/contact";
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
 const ContactForm = () => {
+  const [inputs, setInputs] = useState({});
+
+  const handleChange = (e) => {
+    let name = e.target.name;
+    let value = e.target.value;
+
+    setInputs((values) => ({ ...values, [name]: value }));
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
+
+    document.querySelector('#message-sent').showModal();
+    
+    setTimeout(() => {
+      document.querySelector('#message-sent').close();
+    }, 1500);
+    // document.querySelector('form').removeEventListener/
+  };
   return (
     <section className="flex justify-center mb-10 relative pt-20">
       <main className="lg:w-[1210px] w-[85%] flex lg:flex-row flex-col justify-between">
@@ -40,7 +62,7 @@ const ContactForm = () => {
         </div>
 
         {/* Form */}
-        <form>
+        <form onSubmit={handleFormSubmit}>
           <fieldset>
             {/* input fields */}
             <div className="flex flex-wrap lg:w-[688px] gap-7 mb-7">
@@ -53,7 +75,9 @@ const ContactForm = () => {
                   type="text"
                   name="fullname"
                   required
+                  value={inputs.fullname || ""}
                   placeholder="Achmad Furqon"
+                  onChange={handleChange}
                 />
               </div>
               <div className="field-container">
@@ -62,10 +86,12 @@ const ContactForm = () => {
                 </label>
                 <input
                   id="email"
-                  type="text"
+                  type="email"
                   name="email"
                   required
+                  value={inputs.email || ""}
                   placeholder="personalEmail@gmail.com"
+                  onChange={handleChange}
                 />
               </div>
               <div className="field-container">
@@ -74,10 +100,12 @@ const ContactForm = () => {
                 </label>
                 <input
                   id="phone"
-                  type="text"
+                  type="number"
                   name="phone"
                   required
+                  value={inputs.phone || ""}
                   placeholder="+62 822 922 939"
+                  onChange={handleChange}
                 />
               </div>
               <div className="field-container">
@@ -86,25 +114,39 @@ const ContactForm = () => {
                   id="company"
                   type="text"
                   name="company"
+                  value={inputs.company || ""}
                   placeholder="Tell your message..."
+                  onChange={handleChange}
                 />
               </div>
             </div>
 
             {/* textarea */}
             <div className="field-container w-full">
-              <label for="company">Company</label>
+              <label for="message">Message</label>
               <textarea
                 draggable="false"
-                id="company"
+                id="message"
                 type="text"
-                name="company"
+                name="message"
+                value={inputs.message || ""}
                 placeholder="Tell your message..."
+                onChange={handleChange}
               />
             </div>
           </fieldset>
-          <button type="submit" className="btn-base btn-base-pad btn-dark mt-10">Send Message</button>
+          <button
+            type="submit"
+            className="btn-base btn-base-pad btn-dark mt-10"
+            onClick={handleFormSubmit}
+          >
+            Send Message
+          </button>
         </form>
+
+        <dialog id="message-sent">
+          <p>Message Sent</p>
+        </dialog>
       </main>
     </section>
   );
