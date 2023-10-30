@@ -14,10 +14,10 @@ import { Footer, Navbar, Topbar } from "./components/components";
 const App = () => {
   return (
     <Router>
-      <div className="w-full flex justify-center bg-pri-dark-gray">
+      <div className="wrapper bg-pri-dark-gray">
         <Topbar />
       </div>
-      <div className="w-full flex justify-center bg-[#1b1b1bed]">
+      <div className="wrapper bg-[#1b1b1bed]">
         <Navbar />
       </div>
 
@@ -31,7 +31,7 @@ const App = () => {
         <Route path="*" Component={NotFound} />
       </Routes>
       
-      <div className="w-full flex justify-center footer-container relative">
+      <div className="wrapper footer-container relative">
         <Footer />
       </div>
     </Router>

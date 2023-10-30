@@ -68,3 +68,11 @@ textarea {
   background-size: cover;
   
 }
+
+.wrapper { 
+  @apply w-full flex justify-center;
+}
+
+.section-responsive { 
+  @apply lg:w-[1210px] w-[85%];
+}

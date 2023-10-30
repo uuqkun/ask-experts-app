@@ -4,11 +4,6 @@ const Hero = () => {
   return (
     <>
       <div className="flex justify-between items-start h-[85vh] lg:h-[850px] py-10 relative">
-        {/* <img
-          src={headerImg}
-          alt="header image"
-          className="w-full md:h-[840px] h-[90vh] hero-img absolute top-0 left-0 z-[-1]"
-        /> */}
         <div
           className=" hero-img absolute top-0 left-0 z-[-1]"
         />
