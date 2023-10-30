@@ -6,7 +6,7 @@ const ImageGallery = () => {
     <section className="flex justify-center mb-10 relative pt-20">
       <div className="bg-gallery absolute top-0 left-0 z-[-1] w-full lg:h-[445px] sm:h-[50%] h-[70%]" />
 
-      <div className="lg:w-[1210px] w-[85%]">
+      <div className="section-responsive">
         <div className="flex sm:flex-row flex-col justify-between sm:items-end items-start mb-14 gap-10">
           <HeaderSection
             {...{

@@ -10,7 +10,7 @@ const About = () => {
   };
 
   return (
-    <div className="flex justify-between items-center flex-wrap gap-20 w-[85%] lg:w-[1210px] py-10">
+    <div className="flex justify-between items-center flex-wrap gap-20 section-responsive py-10">
       {/* texts */}
       <div className="flex-1">
         <HeaderSection {...headerProps} />

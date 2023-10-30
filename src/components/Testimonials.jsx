@@ -11,7 +11,7 @@ const Testimonials = () => {
   };
   return (
     <section className="flex justify-center mb-10 relative pt-20">
-      <div className="lg:w-[1210px] w-[85%]">
+      <div className="section-responsive">
         <div className="mx-auto w-[60%]">
           <div className="w-fit mx-auto">
             <SectionTag text="Client Feedback" variants="green1" />

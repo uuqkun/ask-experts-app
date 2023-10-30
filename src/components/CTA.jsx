@@ -4,7 +4,7 @@ import { Button, SectionTag } from "./components";
 const CTA = () => {
   return (
     <section className="flex justify-center mb-10 relative pt-20">
-      <div className="lg:w-[1210px] w-[85%] bg-pri-heading rounded-[30px] flex lg:justify-center justify-start gap-10 items-center lg:p-0 sm:p-20 p-14 ">
+      <div className="section-responsive bg-pri-heading rounded-[30px] flex lg:justify-center justify-start gap-10 items-center lg:p-0 sm:p-20 p-14 ">
         <div className="lg:w-[45%] sm:w-[80%] w-full ">
           <SectionTag text="Book Now" variants="green1" />
           <h2 className="leading-none mb-6">

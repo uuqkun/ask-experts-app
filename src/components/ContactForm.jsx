@@ -27,7 +27,7 @@ const ContactForm = () => {
 
   return (
     <section className="flex justify-center mb-40 relative pt-20">
-      <main className="lg:w-[1210px] w-[85%] flex lg:flex-row flex-col justify-between">
+      <main className="section-responsive flex lg:flex-row flex-col justify-between">
         {/* Text */}
         <div className="lg:w-[420px] w-full">
           <HeaderSection

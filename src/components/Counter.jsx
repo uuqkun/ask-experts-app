@@ -3,7 +3,7 @@ import countData from "../constants/countData";
 const Counter = () => {
   return (
     <section className="flex justify-center mb-40 relative">
-      <div className="lg:w-[1210px] w-[85%]">
+      <div className="section-responsive">
         <ul className="flex flex-wrap justify-center gap-36">
           {countData.map((data) => (
             <li key={data.title}>

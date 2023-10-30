@@ -20,7 +20,7 @@ const Process = () => {
   ];
   return (
     <section className="flex justify-center mb-40">
-      <div className="lg:w-[1210px] w-[85%] flex lg:flex-row flex-col lg:gap-10 gap-32">
+      <div className="section-responsive flex lg:flex-row flex-col lg:gap-10 gap-32">
         {/* left side */}
         <div className="">
           <HeaderSection {...attributes[0].left} />
