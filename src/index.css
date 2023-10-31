@@ -24,19 +24,6 @@ svg {
   @apply text-pri-green;
 }
 
-.hero-img {
-  background: url("https://s6.imgcdn.dev/9MMgg.md.png") no-repeat;
-  background-size: cover;
-  object-position: 0 -20px;
-  @apply w-full h-full object-cover;
-}
-
-@media screen and (max-width: 768px) {
-  .hero-img { 
-    background: url("https://s6.imgcdn.dev/9M4SN.md.png") no-repeat;
-    background-size: 100% 100%;
-  }
-}
 
 .bg-gallery {
   background: url("https://s6.imgcdn.dev/96xMu.png");
@@ -75,4 +62,29 @@ textarea {
 
 .section-responsive { 
   @apply lg:w-[1210px] w-[85%];
+}
+
+/* Home - Hero section  */
+
+
+.home-wrapper { 
+  @apply flex justify-between items-start h-[85vh] lg:h-[850px] py-10 relative;
+}
+
+.home-card { 
+  @apply bg-card-transparent rounded-2xl w-[90%] lg:w-[580px] p-10 md:p-[58px] z-[1] shadow-xl mx-auto lg:ml-[10%] mt-[10%] md:mt-[10%];
+}
+
+.hero-img {
+  background: url("https://s6.imgcdn.dev/9MMgg.md.png") no-repeat;
+  background-size: cover;
+  object-position: 0 -20px;
+  @apply w-full h-full object-cover  absolute top-0 left-0 z-[-1];
+}
+
+@media screen and (max-width: 768px) {
+  .hero-img { 
+    background: url("https://s6.imgcdn.dev/9M4SN.md.png") no-repeat;
+    background-size: 100% 100%;
+  }
 }

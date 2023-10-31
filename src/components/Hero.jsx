@@ -3,13 +3,13 @@ import { Button } from "./components";
 const Hero = () => {
   return (
     <>
-      <div className="flex justify-between items-start h-[85vh] lg:h-[850px] py-10 relative">
+      <section className="home-wrapper">
         <div
-          className=" hero-img absolute top-0 left-0 z-[-1]"
+          className="hero-img"
         />
 
         {/* hero card */}
-        <div className="bg-card-transparent rounded-2xl w-[90%] lg:w-[580px] p-10 md:p-[58px] z-[1] shadow-xl mx-auto lg:ml-[10%] mt-[10%] md:mt-[10%]">
+        <div className="home-card">
           <h1 className="mb-3">Your Small Bussiness Growth Advisor</h1>
           <p className="mb-8">
             Get help from Alex Moore, a professional business coach with
@@ -30,7 +30,7 @@ const Hero = () => {
             />
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };
